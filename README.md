@@ -59,6 +59,9 @@ Victim's Machine: When compromised, it connects back to the attacker's machine, 
 ![Image Alt](https://github.com/goutham10248/Reverse-shell-access-using-netcat/blob/a8b13cfa76e8c0df3e40224d2b9f102ba15a2039/images/8.png)
 
 # In Summary:
+
 **Reverse Shell**: The victim's machine connects back to the attacker's machine.
+
 **Purpose**: Allows remote control over the victim's machine.
+
 **Usage**: Often used in penetration testing or by hackers.
